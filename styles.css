@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Ubuntu', sans-serif; }
+
+.container {
+  background-color: grey; }
+  .container .row {
+    transition: 2s;
+    position: relative; }
+    .container .row #close {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      z-index: 2;
+      font-size: 2em;
+      font-weight: bold; }
+    .container .row .section {
+      position: absolute;
+      background-color: pink;
+      border: 1px solid black;
+      display: inline-block;
+      width: 50%;
+      height: 50vh;
+      min-width: 0.1px;
+      transition: 1s;
+      overflow: auto; }
+    .container .row .section__content {
+      width: 10px;
+      transition: 2s; }
+    .container .row .section--1 {
+      background-color: lightblue; }
+    .container .row .section--2 {
+      background-color: lightgreen;
+      left: 50%; }
+    .container .row .section--3 {
+      top: 50vh; }
+    .container .row .section--4 {
+      top: 50vh;
+      left: 50%; }
+    .container .row .expand {
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    .container .row .hide {
+      display: none; }

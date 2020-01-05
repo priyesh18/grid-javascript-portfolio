@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal website of Priyesh Patel",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./css/main.scss styles.css -w"
+  },
+  "author": "Priyesh Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
