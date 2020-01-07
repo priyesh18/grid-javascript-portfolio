@@ -8,32 +8,149 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="hide" id="close" onclick="collapse(this)">&times;</div>
-            <div class="section section--1" onclick="expand(this)">
-                <div class="section__name">about</div>
-                <div class="section__content hide">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur easdem res, inquam, Peripateticis dicentibus verbum nullum est, quod non intellegatur? <b>An tu me de L.</b> Scio enim esse quosdam, qui quavis lingua philosophari possint; At cum tuis cum disseras, multa sunt audienda etiam de obscenis voluptatibus, de quibus ab Epicuro saepissime dicitur. Itaque hic ipse iam pridem est reiectus; <a href="http://loripsum.net/" target="_blank">Tum Triarius: Posthac quidem, inquit, audacius.</a> Quid igitur dubitamus in tota eius natura quaerere quid sit effectum? Atqui reperies, inquit, in hoc quidem pertinacem; <mark>Duo Reges: constructio interrete.</mark> Bonum incolumis acies: misera caecitas. Nam, ut paulo ante docui, augendae voluptatis finis est doloris omnis amotio. Illa videamus, quae a te de amicitia dicta sunt. Et certamen honestum et disputatio splendida! omnis est enim de virtutis dignitate contentio. Hi autem ponunt illi quidem prima naturae, sed ea seiungunt a finibus et a summa bonorum; Familiares nostros, credo, Sironem dicis et Philodemum, cum optimos viros, tum homines doctissimos. </p>
-                    
-                    <p><i>Suo enim quisque studio maxime ducitur.</i> Quae quidem res efficit, ne necesse sit isdem de rebus semper quasi dictata decantare neque a commentariolis suis discedere. Non enim in selectione virtus ponenda erat, ut id ipsum, quod erat bonorum ultimum, aliud aliquid adquireret. Quacumque enim ingredimur, in aliqua historia vestigium ponimus. <b>At certe gravius.</b> <b>Philosophi autem in suis lectulis plerumque moriuntur.</b> </p>
-                    
-                    <p>Ut alios omittam, hunc appello, quem ille unum secutus est. Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest. Est tamen ea secundum naturam multoque nos ad se expetendam magis hortatur quam superiora omnia. </p>
-  
+    <div class="container">	
+        <span class="bl-icon bl-icon-close" onclick="close_btn(this)">&times;</span>
+        <div id="bl-main" class="bl-main">
+            <section>
+                <div class="bl-box">
+                    <h2 >About</h2>
                 </div>
-            </div>
-            <div class="section section--2" onclick="expand(this)">
-                2
-            </div>
-      
-            <div class="section section--3">
-                3
-            </div>
-            <div class="section section--4">
-                4
-            </div>
+                <div class="bl-content">
+                    
+                    <h2>Hi, I'm <strong>Priyesh Patel</strong></h2>
+                    <p>Software Engineer | Computer Science graduate student </p>
+                    <p>I like to make softwares that make a <u> difference.</u> </p>
+                    <p>I have been coding for the past 6 years and my favourite languages are JavaScript and C++. I love writing technical articles, listening to hindi music and painting.</p>
+                    <p>
+                        <a href="#" class="btn btn--white">
+                            <span>
+                                <!-- <img src="https://img.icons8.com/cotton/32/000000/green-file--v2.png"> -->
+
+                            </span>
+                            <strong>View Resume</strong>
+                        </a>
+                        <!-- <a href="http://tympanus.net/codrops/?p=14783"><strong>Back to the Codrops Article</strong></a> -->
+                    </p>
+                </div>
+            </section>
+            <section id="projects-section">
+                <div class="bl-box">
+                    <h2 >Projects</h2>
+                </div>
+                <div class="bl-content">
+                    <h2>Projects</h2>
+                    <p>This website is one of the projects!</p>
+                    <ul class="project">
+                        
+                       
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="bl-box">
+                    <h2 >Blog</h2>
+                </div>
+                <div class="bl-content">
+                    <h2>My Musings</h2>
+                    <article>
+                        <h3>Being a Freelance Designer</h3>
+                        <p>Stumptown helvetica cardigan, odd future seitan tattooed flannel. Kale chips direct trade cray beard. 8-bit etsy butcher post-ironic blog lo-fi mcsweeney's, sustainable pickled umami flexitarian DIY ethical plaid trust fund. Wolf cred organic, terry richardson aesthetic four loko occupy vegan chillwave readymade deep... <a href="#">Read more</a></p>
+                    </article>
+                    <article>
+                        <h3>Working with Photoshop</h3>
+                        <p>Cosby sweater odd future gluten-free actually dreamcatcher. Fixie cray vice sriracha disrupt, lo-fi pitchfork mcsweeney's swag YOLO meh chambray etsy. Keytar sriracha fanny pack church-key hashtag vice blog. 3 wolf moon VHS helvetica, raw denim deep v shoreditch seitan twee... <a href="#">Read more</a></p>
+                    </article>
+                    <article>
+                        <h3>Making use of Icon Fonts</h3>
+                        <p>Locavore irony gastropub chillwave, butcher meggings flexitarian pinterest master cleanse godard. Intelligentsia pop-up neutra, williamsburg gastropub godard pinterest swag deep v umami lomo. Butcher next level 90's wolf bushwick, narwhal photo booth YOLO kale chips whatever small batch. Meh viral ethical hella cardigan portland, street art mlkshk meggings mixtape kale chips cliche messenger bag pitchfork... <a href="#">Read more</a></p>
+                    </article>
+                    <article>
+                        <h3>Being a Freelance Designer</h3>
+                        <p>Stumptown helvetica cardigan, odd future seitan tattooed flannel. Kale chips direct trade cray beard. 8-bit etsy butcher post-ironic blog lo-fi mcsweeney's, sustainable pickled umami flexitarian DIY ethical plaid trust fund. Wolf cred organic, terry richardson aesthetic four loko occupy vegan chillwave readymade deep... <a href="#">Read more</a></p>
+                    </article>
+                    <article>
+                        <h3>Working with Photoshop</h3>
+                        <p>Cosby sweater odd future gluten-free actually dreamcatcher. Fixie cray vice sriracha disrupt, lo-fi pitchfork mcsweeney's swag YOLO meh chambray etsy. Keytar sriracha fanny pack church-key hashtag vice blog. 3 wolf moon VHS helvetica, raw denim deep v shoreditch seitan twee... <a href="#">Read more</a></p>
+                    </article>
+                    <article>
+                        <h3>Making use of Icon Fonts</h3>
+                        <p>Locavore irony gastropub chillwave, butcher meggings flexitarian pinterest master cleanse godard. Intelligentsia pop-up neutra, williamsburg gastropub godard pinterest swag deep v umami lomo. Butcher next level 90's wolf bushwick, narwhal photo booth YOLO kale chips whatever small batch. Meh viral ethical hella cardigan portland, street art mlkshk meggings mixtape kale chips cliche messenger bag pitchfork... <a href="#">Read more</a></p>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <div class="bl-box">
+                    <h2>Contact</h2>
+                </div>
+                <div class="bl-content">
+                    <h2>Get in touch</h2>
+                    <div class="contact">
+                        <div class="contact__item">
+                            <div class="contact__item--text">Contact me on 
+                                <span class="contact__item--action btn btn--white">
+                                    safal.priyesh[at]gmail.com
+
+                                </span>
+                            </div>
+                    
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item--text">Connect with me on 
+                                <span class="contact__item--action">
+                                    <a href="https://www.linkedin.com/in/priyeshpatel18/" 
+                                        target="_blank" rel="noopener noreferrer" class="btn btn--white">
+                                        Linkedin
+                                    </a>
+
+                                </span>
+                            </div>
+                    
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item--text">View my projects on 
+                                <span class="contact__item--action">
+                                    <a href="https://github.com/priyesh18" 
+                                        target="_blank" rel="noopener noreferrer" class="btn btn--white">
+                                        Github
+                                    </a>
+
+                                </span>
+                            </div>
+                    
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item--text">Read my articles on 
+                                <span class="contact__item--action">
+                                    <a href="https://medium.com/@priyeshp18" 
+                                        target="_blank" rel="noopener noreferrer" class="btn btn--white">
+                                        Medium
+                                    </a>
+
+                                </span>
+                            </div>
+                    
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item--text">Follow me on 
+                                <span class="contact__item--action">
+                                    <a href="https://twitter.com/Priyesh_p18" 
+                                        target="_blank" rel="noopener noreferrer" class="btn btn--white">
+                                        Twitter
+                                    </a>
+
+                                </span>
+                            </div>
+                    
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+           
         </div>
     </div>
+    <!-- /container -->
+    <script src="./scripts/projects.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,25 +1,28 @@
-function expand(id) {
-    console.log(id);
-    // console.log(this);
-    // var sections = document.querySelectorAll(".section");
-    // for(let i = 0; i < sections.length; i++) {
-    //     sections[i].classList.remove("expand");
-        
-    // }
-    var section = document.querySelector(".expand");
-    if(section) section.classList.remove("expand");
-    var close = document.querySelector("#close");
-    close.classList.remove("hide");
-    id.classList.add("expand");
+const el = document.querySelector("#bl-main");
+var fetch_projects = false;
+function ready() {
+    var sections  = document.querySelectorAll("section");
+    var close_btn = document.querySelector(".bl-icon-close");
+
+    sections.forEach((elem) => {
+        elem.addEventListener('click', function() {
+            this.classList.add("bl-expand");
+            el.classList.add("bl-expand-item");
+            close_btn.style.opacity = "1";
+            if(!fetch_projects && this.id === "projects-section") {
+                get_projects(this);
+            }
+        })
+    })
+
 
 }
-function collapse(id) {
-    console.log(this);
-    var close = document.querySelector("#close");
-    close.classList.add("hide");
-    var section = document.querySelector(".expand");
-    section.classList.remove("expand");
-    console.log(close);
-    // id = id.parentElement.classList.add("hide");
-    // id.parentElement.classList.remove("expand");
+function close_btn(elem) {
+    elem.style.opacity = "0";
+    var section = document.getElementsByClassName("bl-expand")[0];
+    section.classList.remove("bl-expand");
+    el.classList.remove("bl-expand-item");
 }
+
+
+document.addEventListener("DOMContentLoaded", ready);
