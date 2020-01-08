@@ -89,14 +89,8 @@ a {
     text-transform: uppercase;
     transition: all 0.2s ease-in-out; }
 
-.bl-icon {
-  cursor: pointer;
-  padding: 1px 2px;
-  border: 2px solid #fff;
-  border-radius: 20px;
-  font-size: 2em; }
-
 .bl-icon-close {
+  font-size: 2em;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -137,7 +131,7 @@ a {
       padding-top: 20px;
       font-size: 1.4em; }
     .bl-content article a {
-      color: rgba(0, 0, 0, 0.2); }
+      color: rgba(255, 255, 255, 0.6); }
   .bl-content ul.project {
     list-style: none;
     padding: 0;
@@ -147,14 +141,12 @@ a {
     .bl-content ul.project li.project__item {
       display: flex;
       flex-direction: column;
-      background-color: #fff;
+      background: linear-gradient(to right bottom, #fff, #cccccc);
       color: #0f4082;
       padding: 18px;
-      margin: 10px;
-      border-radius: 10px;
       box-shadow: 6px 6px 8px rgba(7, 30, 61, 0.5); }
       .bl-content ul.project li.project__item .project__item--name {
-        font-size: 2.3em; }
+        font-size: 2em; }
       .bl-content ul.project li.project__item .project__item--footer {
         margin-top: auto;
         display: flex;
@@ -169,7 +161,7 @@ a {
             content: "\22C6"; }
       .bl-content ul.project li.project__item .project__item--desc {
         color: #404040;
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-bottom: 5px; }
       .bl-content ul.project li.project__item ol.project__item--lang {
         padding: 0;
@@ -180,7 +172,7 @@ a {
         .bl-content ul.project li.project__item ol.project__item--lang li {
           padding: 4px; }
           .bl-content ul.project li.project__item ol.project__item--lang li:before {
-            font-size: 1.8em;
+            font-size: 1.2em;
             content: "\0023"; }
 
 .bl-main.bl-expand-item > section:not(.bl-expand) {
@@ -195,11 +187,16 @@ section.bl-expand .bl-icon-close {
 
 .contact {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: auto; }
   .contact .contact__item {
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
     .contact .contact__item .contact__item--text {
       font-size: 2em;
       display: inline-block; }
@@ -209,7 +206,7 @@ section.bl-expand .bl-icon-close {
 
 .btn {
   text-align: center;
-  padding: 8px;
+  padding: 12px;
   color: #1c3f85;
   border: 1px solid #1c3f85; }
 

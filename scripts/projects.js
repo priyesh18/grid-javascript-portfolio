@@ -1,12 +1,20 @@
 async function get_projects(elem) {
-    const url = "https://api.github.com/search/repositories?q=user:priyesh18";
+    const url = "https://api.github.com/uers/priyesh18/repos?sort=pushed";
     console.log("waiting");
     console.log(elem);
     const project = document.querySelector(".project");
-    const response = await fetch(url);
+    try {
+        var response = await fetch(url);
+
+    } catch(e) {
+        console.log(e);
+        project.innerHTML = `
+            Oops some error occured!<br><a class="btn btn--white" target="_blank" rel="noopener noreferrer" href="https://github.com/priyesh18">View on Github</a>`;
+        return;
+    }
     const result = await response.json();
     // result = [1,2,34,4];
-    result.items.forEach(async r => {
+    result.forEach(async r => {
         var lang = await fetch(r.languages_url);
         const languages = await lang.json();
         lang = Object.keys(languages);
@@ -25,7 +33,7 @@ async function get_projects(elem) {
         </ol>
         <div class="project__item--footer">
             
-            <a href="${url}" class="btn">
+            <a target="_blank" rel="noopener noreferrer" href="${r.html_url}" class="btn">
                 <span class="btn__icon"></span>
                 View on Github
             </a>

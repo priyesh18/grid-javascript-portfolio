@@ -111,20 +111,9 @@ a {
     }
 }
 
-.bl-icon {
-	// line-height: 1;
-    cursor: pointer;
-    padding: 1px 2px;
-    border: 2px solid $color-white;
-    border-radius: 20px;
-    font-size: 2em;
-    // &:before {
-    //     display: block;
-    //     font-size: 2em;
-    //     margin-bottom: 10px;
-    // }
-}
+
 .bl-icon-close {
+    font-size: 2em;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -172,7 +161,7 @@ a {
             font-size: 1.4em;
         }
         a {
-            color: rgba($color-black,0.2);
+            color: rgba($color-white,0.6);
         }
     }
     ul.project {
@@ -185,15 +174,15 @@ a {
         li.project__item {
             display: flex;
             flex-direction: column;
-            background-color: $color-white;
+            background: linear-gradient(to right bottom, $color-white, darken($color-white, 20%));
             color: lighten($color-one, 15%);
             padding: 18px;
-            margin: 10px;
-            border-radius: 10px;
+            // margin: 10px;
+            // border-radius: 10px;
             // border: 1px solid $color-one;
             box-shadow:  6px 6px 8px rgba($color-one,0.5);
             .project__item--name {
-                font-size: 2.3em;
+                font-size: 2em;
             }
             .project__item--footer {
                 margin-top: auto;
@@ -214,7 +203,7 @@ a {
             }
             .project__item--desc {
                 color: lighten($color-black, 25%);
-                font-size: 1.5em;
+                font-size: 1.2em;
                 margin-bottom: 5px;
             }
             ol.project__item--lang {
@@ -226,7 +215,7 @@ a {
                 li {
                     padding: 4px;
                     &:before {
-                        font-size: 1.8em;
+                        font-size: 1.2em;
                         // color: $color-two;
                         content: "\0023";
                     }
@@ -269,11 +258,17 @@ section.bl-expand .bl-icon-close {
 }
 .contact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // height: 100%;
+    max-width: 600px;
+    margin: auto;
     .contact__item {
         text-align: center;
+        padding: 20px;
         .contact__item--text {
             font-size: 2em;
             display: inline-block;
@@ -286,7 +281,7 @@ section.bl-expand .bl-icon-close {
 }
 .btn {
     text-align: center;
-    padding: 8px;
+    padding: 12px;
     color: $color-two;
     border: 1px solid $color-two;
 }
