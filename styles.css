@@ -223,3 +223,104 @@ section.bl-expand .bl-icon-close {
 .btn--white {
   color: #fff;
   border: 1px solid #fff; }
+
+.loader {
+  text-align: center; }
+
+@keyframes one {
+  0% {
+    width: 2.5em;
+    height: 2.5em;
+    top: 0px;
+    left: 0px;
+    z-index: 2; }
+  15% {
+    width: 5em;
+    height: 5em;
+    top: 0px;
+    left: 0px; }
+  25% {
+    width: 2.5em;
+    height: 2.5em; } }
+
+@keyframes two {
+  0% {
+    width: 2.5em;
+    height: 2.5em;
+    z-index: 2; }
+  15% {
+    width: 5em;
+    height: 5em;
+    top: 0px;
+    left: 0px; }
+  25% {
+    width: 2.5em;
+    height: 2.5em;
+    left: 2.5em; } }
+
+@keyframes three {
+  0% {
+    width: 2.5em;
+    height: 2.5em;
+    z-index: 2; }
+  15% {
+    width: 5em;
+    height: 5em;
+    top: 0px;
+    left: 0px; }
+  25% {
+    width: 2.5em;
+    height: 2.5em;
+    top: 2.5em; }
+  100% {
+    z-index: -1; } }
+
+@keyframes four {
+  0% {
+    width: 2.5em;
+    height: 2.5em;
+    z-index: 2; }
+  15% {
+    width: 5em;
+    height: 5em;
+    top: 0px;
+    left: 0px; }
+  25% {
+    width: 2.5em;
+    height: 2.5em;
+    top: 2.5em;
+    left: 2.5em; }
+  100% {
+    z-index: -1; } }
+  .loader .loader__wrapper {
+    margin: 20px auto;
+    position: relative;
+    height: 5em;
+    width: 5em; }
+    .loader .loader__wrapper .loader__blocks {
+      position: absolute;
+      width: 2.5em;
+      height: 2.5em;
+      animation-duration: 4s;
+      animation-iteration-count: infinite; }
+    .loader .loader__wrapper #one {
+      background-color: #071e3d;
+      animation-name: one;
+      animation-delay: 0s; }
+    .loader .loader__wrapper #two {
+      left: 2.5em;
+      background-color: #1c3f85;
+      animation-name: two;
+      animation-delay: 1s; }
+    .loader .loader__wrapper #three {
+      top: 2.5em;
+      background-color: #278ea5;
+      animation-name: three;
+      animation-iteration-count: infinite;
+      animation-delay: 3s; }
+    .loader .loader__wrapper #four {
+      top: 2.5em;
+      left: 2.5em;
+      background-color: #1dccac;
+      animation-name: four;
+      animation-delay: 2s; }

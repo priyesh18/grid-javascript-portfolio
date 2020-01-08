@@ -302,21 +302,92 @@ section.bl-expand .bl-icon-close {
     color: $color-white;
     border: 1px solid $color-white;
 }
-
-// @media screen and (max-width: 46.5em) {
-// 	.bl-content,
-// 	.bl-box {
-// 		font-size: 75%;
-// 	}
-
-// 	.bl-expand .bl-box {
-// 		height: 130px;
-// 	}
-
-// 	.bl-content > ul li {
-// 		width: 40%;
-// 	}
-// }
+.loader  {
+    text-align: center;
+    @keyframes one {
+        0% { width: 2.5em ; height: 2.5em; top:0px; left: 0px; z-index: 2}
+        15% {
+          width: 5em; height: 5em;
+          top:0px;
+          left: 0px;
+        }
+        25% { width: 2.5em; height: 2.5em}
+      }
+      @keyframes two {
+        0% { width: 2.5em ; height: 2.5em; z-index: 2}
+        15% {
+          width: 5em; height: 5em;
+          top:0px;
+          left: 0px;
+        }
+        25% { width: 2.5em; height: 2.5em;
+          left: 2.5em;
+        }
+      }
+      @keyframes three {
+        0% { width: 2.5em ; height: 2.5em; z-index: 2}
+        15% {
+          width: 5em; height: 5em;
+          top:0px;
+          left: 0px;
+        }
+        25% { width: 2.5em; height: 2.5em; top: 2.5em}
+        100% {
+            z-index: -1;
+        }
+      }
+      @keyframes four {
+        0% { width: 2.5em ; height: 2.5em; z-index: 2 }
+        15% {
+          width: 5em; height: 5em;
+          top:0px;
+          left: 0px;
+        }
+        25% { width: 2.5em; height: 2.5em; top: 2.5em; left: 2.5em;}
+        100% {
+            z-index: -1;
+        }
+      }
+      .loader__wrapper {
+        margin: 20px auto;
+        position: relative;
+        height: 5em;
+        width: 5em;
+        .loader__blocks {
+            position: absolute;
+            width: 2.5em;
+            height: 2.5em;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        #one {
+          background-color: $color-one;
+          animation-name: one;
+          animation-delay: 0s;
+        }
+        #two {
+          left: 2.5em;
+          background-color: $color-two;
+          animation-name: two;
+          animation-delay: 1s;
+        }
+        #three {
+          top:2.5em;
+          background-color:$color-three;
+          animation-name: three;
+          animation-iteration-count: infinite;
+          animation-delay: 3s;
+        }
+        #four {
+          top: 2.5em;
+          left: 2.5em;
+          background-color:$color-four;
+          animation-name: four;
+          animation-delay: 2s;
+        }
+      }
+      
+}
 
     
     

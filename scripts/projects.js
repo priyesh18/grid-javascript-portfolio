@@ -42,7 +42,9 @@ async function get_projects(elem) {
         `
         project.appendChild(li)
     })
+    project.previousElementSibling.style.display="none";
     console.log("done");
+    // console.l
 }
 {/* <span class="project__item--stars">${r.stargazers}</span> */}
 
