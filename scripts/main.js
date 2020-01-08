@@ -9,7 +9,8 @@ function ready() {
             this.classList.add("bl-expand");
             el.classList.add("bl-expand-item");
             close_btn.style.opacity = "1";
-            if(!fetch_projects && this.id === "projects-section") {
+            history.pushState(null,null, "");
+            if(!fetch_projects && this.id === "projects") {
                 get_projects(this);
             }
         })
@@ -23,6 +24,9 @@ function close_btn(elem) {
     section.classList.remove("bl-expand");
     el.classList.remove("bl-expand-item");
 }
-
+window.onpopstate = function (e) {
+    var elem = document.querySelector(".bl-icon-close");
+    close_btn(elem);
+}
 
 document.addEventListener("DOMContentLoaded", ready);

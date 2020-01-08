@@ -42,19 +42,23 @@ a {
     .bl-main section:first-child {
       top: 0;
       left: 0;
-      background: linear-gradient(to right bottom, #071e3d, #1a4075); }
+      background: linear-gradient(to left top, #0d3974, #071e3d);
+      color: #0c3266; }
     .bl-main section:nth-child(2) {
       top: 0;
       left: 50%;
-      background: linear-gradient(to left bottom, #1c3f85, #335caf); }
+      background: linear-gradient(to left top, #2757b8, #1c3f85);
+      color: #2451ab; }
     .bl-main section:nth-child(3) {
       top: 50%;
       left: 0;
-      background: linear-gradient(to right top, #278ea5, #1c8197); }
+      background: linear-gradient(to left top, #278ea5, #1b6374);
+      color: #238095; }
     .bl-main section:nth-child(4) {
       top: 50%;
       left: 50%;
-      background: linear-gradient(to left top, #1dccac, #179780); }
+      background: linear-gradient(to left top, #1dccac, #15967f);
+      color: #1aba9d; }
     .bl-main section.bl-expand {
       width: 100%;
       height: 100%;
@@ -78,6 +82,9 @@ a {
   justify-content: center;
   align-items: center;
   transition: opacity 0.2s linear 0.5s; }
+  .bl-box .bg {
+    position: absolute;
+    font-size: 8em; }
   .bl-box h2 {
     text-align: center;
     margin: 0;
@@ -87,7 +94,9 @@ a {
     letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    z-index: 2; }
 
 .bl-icon-close {
   font-size: 2em;
@@ -103,6 +112,7 @@ a {
   opacity: 0;
   pointer-events: none;
   position: absolute;
+  color: #fff;
   top: 0px;
   left: 0px;
   right: 0px;
