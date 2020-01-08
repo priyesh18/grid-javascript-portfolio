@@ -198,11 +198,11 @@ section.bl-expand .bl-icon-close {
     text-align: center;
     padding: 20px; }
     .contact .contact__item .contact__item--text {
-      font-size: 2em;
-      display: inline-block; }
-    .contact .contact__item .contact__item--action {
-      font-size: 1em;
+      font-size: 1.8em;
+      display: inline-block;
       line-height: 1.7em; }
+    .contact .contact__item .contact__item--action {
+      font-size: 1em; }
 
 .btn {
   text-align: center;

@@ -1,5 +1,5 @@
 async function get_projects(elem) {
-    const url = "https://api.github.com/uers/priyesh18/repos?sort=pushed";
+    const url = "https://api.github.com/users/priyesh18/repos?sort=pushed";
     console.log("waiting");
     console.log(elem);
     const project = document.querySelector(".project");
