@@ -12,6 +12,7 @@ function ready() {
             history.pushState(null,null, "");
             if(!fetch_projects && this.id === "projects") {
                 get_projects(this);
+                fetch_projects = true;
             }
         })
     })
@@ -23,6 +24,7 @@ function close_btn(elem) {
     var section = document.getElementsByClassName("bl-expand")[0];
     section.classList.remove("bl-expand");
     el.classList.remove("bl-expand-item");
+    history.back();
 }
 window.onpopstate = function (e) {
     var elem = document.querySelector(".bl-icon-close");
